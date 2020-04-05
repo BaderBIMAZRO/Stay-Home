@@ -1,0 +1,42 @@
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @place.description %>
+</p>
+<strong>Directions:</strong>
+<%= link_to 'Location', 
+"https://www.google.com/maps/search/?api=1&query=#{@place.latitude},#{@place.longitude}"
+%>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @place.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @place.longitude %>
+</p>
+<%= link_to 'Edit', edit_place_path(@place) %> |
+<%= link_to 'Back', places_path %>
+<p>
+    <div id="map"></div>
+  <% provide :head_tags do %>
+  <meta name='turbolinks-visit-control' content='reload'>
+  <script>
+  const description = '<%= @place.description%>'
+  const name = '<%= @place.name %>' 
+    document.addEventListener("DOMContentLoaded", function(){
+      initMap(<%=@place.latitude%>, <%=@place.longitude%>, name, description)
+    });
+
+  </script>
+<% end %>
+
+
+</p>
+
+
+
