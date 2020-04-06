@@ -90,9 +90,18 @@ function initMap2() {
 
 
 
-const initMap3 = (lat, lng) => {
-    const name = 'Need help'
-    coordinate.push([name,lat, lng])
+const initMap3 = (lat, lng, places, description) => {
+  let infoWindow = '<div id="content">'+
+  '<div id="siteNotice">'+
+  '</div>'+
+  '<h1 id="firstHeading" class="firstHeading">'+ places +'</h1>'+
+  '<div id="bodyContent">'+
+  '<p>'+ description+'.</p>'+
+  '</div>'+
+  '</div>';
+  
+    
+    coordinate.push([infoWindow,lat, lng])
 
     let myCoords = new google.maps.LatLng(lat, lng);
     const mapOptions = {
