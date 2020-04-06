@@ -11,6 +11,8 @@ const initMap=(lat, lng, name, description) => {
     center: myCoords,
     zoom: 14
     };
+    let image = {url:'https://img.icons8.com/officexs/16/000000/high-risk.png',
+    size: new google.maps.Size(20, 32), }
     const map = new google.maps.Map(document.getElementById('map'), mapOptions);
     const contentString = '<div id="content">'+
             '<div id="siteNotice">'+
@@ -27,7 +29,8 @@ const initMap=(lat, lng, name, description) => {
         });
     const marker = new google.maps.Marker({
         position: myCoords,
-        map: map
+        map: map,
+        icon: image
     });
     marker.addListener('click', function() {
         infowindow.open(map, marker);
@@ -96,7 +99,7 @@ const initMap3 = (lat, lng) => {
     center: myCoords,
     zoom: 13
     };
-    let image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
+    let image = 'https://img.icons8.com/officexs/16/000000/high-risk.png';
     const map = new google.maps.Map(document.getElementById('map3'), mapOptions);
     const contentString = '<div id="content">'+
     '<div id="siteNotice">'+
@@ -106,7 +109,6 @@ const initMap3 = (lat, lng) => {
     '<p>In need of supplies.</p>'+
     '</div>'+
     '</div>';
-
 
         coordinate.forEach(function(element, index){
             const allCoords = coordinate[index];
