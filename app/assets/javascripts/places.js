@@ -14,11 +14,11 @@ const initMap=(lat, lng, name, description) => {
     let image = {url:'https://img.icons8.com/officexs/16/000000/high-risk.png',
     size: new google.maps.Size(20, 32), }
     const map = new google.maps.Map(document.getElementById('map'), mapOptions);
-    const contentString = '<div id="content">'+
-            '<div id="siteNotice">'+
+    const contentString = '<div class="content">'+
+            '<div class="siteNotice">'+
             '</div>'+
-            '<h1 id="firstHeading" class="firstHeading">'+ name +'</h1>'+
-            '<div id="bodyContent">'+
+            '<h1 class="firstHeading" class="firstHeading">'+ name +'</h1>'+
+            '<div class="bodyContent">'+
             '<p>'+ description+'.</p>'+
             '</div>'+
             '</div>';
@@ -91,11 +91,11 @@ function initMap2() {
 
 
 const initMap3 = (lat, lng, places, description) => {
-  let infoWindow = '<div id="content">'+
-  '<div id="siteNotice">'+
+  let infoWindow = '<div class="content">'+
+  '<div class="siteNotice">'+
   '</div>'+
-  '<h1 id="firstHeading" class="firstHeading">'+ places +'</h1>'+
-  '<div id="bodyContent">'+
+  '<h1 class="firstHeading" class="firstHeading">'+ places +'</h1>'+
+  '<div class="bodyContent">'+
   '<p>'+ description+'.</p>'+
   '</div>'+
   '</div>';
@@ -110,14 +110,7 @@ const initMap3 = (lat, lng, places, description) => {
     };
     let image = 'https://img.icons8.com/officexs/16/000000/high-risk.png';
     const map = new google.maps.Map(document.getElementById('map3'), mapOptions);
-    const contentString = '<div id="content">'+
-    '<div id="siteNotice">'+
-    '</div>'+
-    '<h1 id="firstHeading" class="firstHeading">'+ name +'</h1>'+
-    '<div id="bodyContent">'+
-    '<p>In need of supplies.</p>'+
-    '</div>'+
-    '</div>';
+   
 
         coordinate.forEach(function(element, index){
             const allCoords = coordinate[index];
