@@ -1,3 +1,25 @@
 // Place all the styles related to the Reports controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.container{
+    border:1px solid #6c757d;
+    border-radius: 6px;
+}
+h2 a:link { 
+    text-decoration:none; 
+    margin: 50px 130px;
+   
+    
+}
+button{
+    width: 127px;
+    height: 38px;
+    margin: 0 60px;
+
+}
+.w-75{
+    margin: 100px;
+    text-align: center;
+}
