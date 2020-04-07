@@ -1,27 +1,32 @@
 
 <p id="notice"><%= notice %></p>
+<h1 class="header"> Detail view</h1>
 
-<p>
+<div class="container">
+<h4>
   <strong>Description:</strong>
   <%= @place.description %>
-</p>
+</h4>
+
+<h4>
 <strong>Directions:</strong>
-<%= link_to 'Location', 
+<%= link_to 'Location Link', 
 "https://www.google.com/maps/search/?api=1&query=#{@place.latitude},#{@place.longitude}"
 %>
+</h4>
 
-<p>
+<h4>
   <strong>Latitude:</strong>
   <%= @place.latitude %>
-</p>
+</h4>
 
-<p>
+<h4>
   <strong>Longitude:</strong>
   <%= @place.longitude %>
-</p>
+</h4>
 <%= link_to 'Edit', edit_place_path(@place) %> |
 <%= link_to 'Back', places_path %>
-<p>
+
     <div id="map"></div>
   <% provide :head_tags do %>
   <meta name='turbolinks-visit-control' content='reload'>
@@ -36,7 +41,8 @@
 <% end %>
 
 
-</p>
 
+
+</div>
 
 
