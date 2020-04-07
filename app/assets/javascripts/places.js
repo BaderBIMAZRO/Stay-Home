@@ -11,8 +11,8 @@ const initMap=(lat, lng, name, description) => {
     center: myCoords,
     zoom: 14
     };
-    let image = {url:'https://img.icons8.com/officexs/16/000000/high-risk.png',
-    size: new google.maps.Size(20, 32), }
+    let image ='https://img.icons8.com/plasticine/30/000000/google-maps.png';
+    
     const map = new google.maps.Map(document.getElementById('map'), mapOptions);
     const contentString = '<div class="content">'+
             '<div class="siteNotice">'+
@@ -108,10 +108,9 @@ const initMap3 = (lat, lng, places, description) => {
     center: myCoords,
     zoom: 13
     };
-    let image = 'https://img.icons8.com/officexs/16/000000/high-risk.png';
+    let image = 'https://img.icons8.com/plasticine/38/000000/google-maps.png';
     const map = new google.maps.Map(document.getElementById('map3'), mapOptions);
    
-
         coordinate.forEach(function(element, index){
             const allCoords = coordinate[index];
             const infowindow = new google.maps.InfoWindow({
