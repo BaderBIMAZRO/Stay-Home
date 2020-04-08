@@ -14,7 +14,7 @@
         <th class="table-success">Details</th>
         <th class="table-success">Edit</th>
          <th class="table-success">Delete</th>
-         <th class="table-success">Create  <%= link_to '<span class="material-icons">add_location</span>'.html_safe, new_place_path %>  </th>
+         <th class="table-success">Create Location <%= link_to '<span class="material-icons">add_location</span>'.html_safe, new_place_path %>  </th>
     </tr>
   </thead>
 
@@ -29,7 +29,7 @@
         <td><%= link_to '<span class="material-icons">update</span>'.html_safe, edit_place_path(place) %></td>
         <td><%= link_to '<span class="material-icons">delete_forever</span>'.html_safe, place, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         <td>
-        <%= link_to 'Location', 
+        <%= link_to 'Directions', 
 "https://www.google.com/maps/search/?api=1&query=#{place.latitude},#{place.longitude}"
 %>
         </td>

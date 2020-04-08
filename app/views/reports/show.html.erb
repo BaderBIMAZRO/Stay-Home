@@ -8,3 +8,20 @@
   </div>
 </div>
 </div>
+
+<div class="comment">
+
+     <%= link_to "Add New Comment", new_comment_path(:report_id => @report.id), { :class => "button waves-effect waves-light btn" } %>
+    <% @comments.each do |comment| %>
+    
+    <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+    <div class="card-body">
+    <h5 class="card-title">COMMENT</h5>
+    <p class="card-text"><%=comment.content %>.</p>
+    </div>
+    </div>
+        
+    <% end %>
+</div>
+  
+

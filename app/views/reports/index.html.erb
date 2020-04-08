@@ -1,8 +1,9 @@
 
 
-<p id="notice"><%= notice %></p>
+
 <h2 class="header"> Report an Issue</h2>
 <div class="container">
+<p id="notice"><%= notice %></p>
 <table class="table">
   <thead>
     <tr>
@@ -10,7 +11,6 @@
        <th>DETAILS</th>
         <th>EDIT</th>
          <th>DELETE</th>
-      <th colspan="4"></th>
     </tr>
   </thead>
 
@@ -26,4 +26,4 @@
   </tbody>
 </table>
 </div>
- <div> <h2> <%= link_to 'Create New  ', new_report_path %> </h2> </div>
+ <div> <h2 class="header"> <%= link_to 'Create New  ', new_report_path %> </h2> </div>
