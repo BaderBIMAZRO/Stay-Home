@@ -27,7 +27,7 @@ a {
   }
 
   &:hover {
-    // color: #fff;
+     color: #fff;
     // background-color: #000;
   }
 }
@@ -48,6 +48,7 @@ div {
 
 #notice {
   color: green;
+  margin: 0 auto;
 }
 
 .field_with_errors {
@@ -61,7 +62,8 @@ div {
   border: 2px solid red;
   padding: 7px 7px 0;
   margin-bottom: 20px;
-  background-color: #f0f0f0;
+  background-color: #ffffff;
+  margin: 0 auto;
 
   h2 {
     text-align: left;
