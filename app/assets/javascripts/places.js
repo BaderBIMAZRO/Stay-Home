@@ -91,10 +91,10 @@ function initMap2() {
 
 
 const initMap3 = (lat, lng, places, description) => {
-  let infoWindow = '<div class="content">'+
+  let infoWindow = '<div class="map-content">'+
   '<div class="siteNotice">'+
   '</div>'+
-  '<h1 class="firstHeading" class="firstHeading">'+ places +'</h1>'+
+  '<h6 class="firstHeading" class="firstHeading">'+ places +'</h6>'+
   '<div class="bodyContent">'+
   '<p>'+ description+'.</p>'+
   '</div>'+
