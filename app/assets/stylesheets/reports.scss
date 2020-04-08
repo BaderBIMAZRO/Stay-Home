@@ -3,8 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-.container{
-    border:1px solid #6c757d;
+.container table{
+    border:3px solid #6c757d;
     border-radius: 6px;
 }
 h2 a:link { 
@@ -20,6 +20,12 @@ button{
 
 }
 .w-75{
-    margin: 100px;
+    margin: 0 auto;
     text-align: center;
 }
+
+.comment{
+    margin: 0 auto;
+    text-align: -webkit-center;
+}
+
