@@ -1,0 +1,12 @@
+<%= bootstrap_form_with(model: @comment, local: true) do |form| %>
+  <%= form.hidden_field :report_id, :value => @report.id %>
+    <div class="container">
+  <div class="input-field col s6">
+  	<%= form.text_field :content, label:"Comment" %>
+  </div>
+
+  <div>
+  <%= form.submit %>
+  </div>
+<% end %>
+</div>

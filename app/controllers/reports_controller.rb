@@ -16,6 +16,8 @@ class ReportsController < ApplicationController
     end
 
     def show
+        @comments = @report.comments
+        
     end
 
     def index
@@ -29,7 +31,7 @@ class ReportsController < ApplicationController
     def create
         @report = Report.new(report_params)
         @report.user = current_user
-        
+
         if @report.save
         redirect_to @report
         else
