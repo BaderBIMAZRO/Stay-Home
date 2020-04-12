@@ -16,14 +16,7 @@ In this website you can use google map to add mark up of your location where oth
 ## Wireframe
 ![wireframe](app/assets/images/Wireframe.jpg)
 
-## Mockup
-#### Report page
-![wireframe](app/assets/images/report.png)
-#### Detail view for report
-![wireframe](app/assets/images/Report_view.png)
-#### Map and points mark up
-![wireframe](app/assets/images/map.png)
-## Entity Relationship diagram
+
 ![ERD](app/assets/images/ERD.jpg)
 
 ## Technology Used
